@@ -14,6 +14,27 @@
       <header>
         <h1><i class="fa-sharp fa-solid fa-feather gradient-icon" style="color: #FAF6F9;"></i> <a href="https://unknown240.github.io/toolsbox/">X1Bypass</a></h1>
         <p>"My Personal Projects"</p>
+
+         <table>
+          {% for nav in site.navigation %}
+            {% if nav.url contains "://" %}
+              <tr><th><a href="{{ nav.url }}">{{ nav.title }}</a></th></tr>
+            {% else %}
+              <tr><th><a href="{{ nav.url | relative_url }}">{{ nav.title }}</a></th></tr>
+            {% endif %}
+          {% endfor %}
+           <tr><th><a href="{{ nav.url }}">{{ nav.title }}</a></th></tr>
+            
+              <tr><th><a href="{{ nav.url | relative_url }}">{{ nav.title }}</a></th></tr>
+        </table>
+
+        {% if site.show_downloads %}
+          <ul>
+            <li><a href="https://drive.x1bypass.my.id/0:/Tools/X1Bypass%20Microsoft%20Tools%20v1.5%20BETA.rar?a=view">Download <strong>XMT v1.5</strong></a></li>
+            <li><a href="https://drive.x1bypass.my.id/0:/Tools/">Download <strong>Lainnta</strong></a></li>
+            <li><a href="https://drive.x1bypass.my.id">View On <strong>Drive</strong></a></li>
+          </ul>
+        {% endif %}
       </header>
       <section>
 
