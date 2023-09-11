@@ -1,0 +1,7 @@
+theme: jekyll-theme-minimal
+title: X1Bypass ToolsBox
+description: We Are Here For U
+show_downloads: true
+navigation: true
+plugins:
+  - jemoji

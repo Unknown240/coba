@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="icon" type="image/png"  href="{{'/assets/img/favicon.png' | relative_url}}">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="bg-zers">
+    <div class="wrapper">
+      <header>
+        <h1><i class="fa-sharp fa-solid fa-feather gradient-icon" style="color: #FAF6F9;"></i> <a href="https://unknown240.github.io/toolsbox/">X1Bypass ToolsBox</a></h1>
+        <p>"My Personal Projects"</p>
+      </header>
+      <section>
+
+      {{ content }}
+      
+    <div class="backtotop"></div>
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <div><a href="https://i.ibb.co/ZB98rPr/bixfy.jpg" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-2.png" height="30" style="border: 0px; height: 30px;" alt="Trakteer Saya"></a>
+        </div>
+        <p style="font-size: 12px; padding: 5px 0">Dibuat dengan ❤️ oleh 
+          <a href="https://archiveksan.t.me" target="_blank" rel="no-referrer">Clvnfrlnsyh</a>
+        </p>
+        {% endif %}
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+
+  {% if site.google_analytics %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+  {% endif %}
+  </body>
+</html>
