@@ -16,7 +16,6 @@
         <p>"My Personal Projects"</p>
         <br>
         <br>
-        <h3>X1Bypass Toolsbox</h3>
          <table>
           {% for nav in site.navigation %}
             {% if nav.url contains "://" %}
@@ -29,7 +28,8 @@
             
               <tr><th><a href="{{ nav.url | relative_url }}">{{ nav.title }}</a></th></tr>
         </table>
-
+        <h1 style="color: white;">X1Bypass ToolsBox</h1>
+      
         {% if site.show_downloads %}
           <ul>
             <li><a href="https://drive.x1bypass.my.id/0:/Tools/X1Bypass%20Microsoft%20Tools%20v1.5%20BETA.rar?a=view">Download <strong>XMT v1.5</strong></a></li>
