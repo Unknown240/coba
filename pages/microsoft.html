@@ -1,74 +1,28 @@
-<html>
-<head>
-  <title>Microsoft</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    .table-container {
-      margin-bottom: 40px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: center;
-    }
-    th, td {
-      padding: 8px;
-      text-align: center;
-    }
-    th.center-header {
-      text-align: center;
-    }
-    th {
-      background-color: #897cff;
-      border-bottom: 1px solid #ddd;
-      text-align: center;
-    }
-    td {
-      border-bottom: 1px solid #ddd;
-      text-align: center;
-    }
-    a {
-      text-decoration: none;
-    }
-    .search-container {
-      margin-bottom: 20px;
-    }
-    .search-container input[type=text] {
-      padding: 8px;
-      width: 200px;
-      border: 1px solid #ddd;
-    }
-  </style>
-  <script>
-    function searchFiles() {
-      var input = document.getElementById("search-input").value.toLowerCase();
-      var rows = document.querySelectorAll("tbody tr");
-      
-      for (var i = 0; i < rows.length; i++) {
-        var fileName = rows[i].getElementsByTagName("td")[0].textContent.toLowerCase();
-        if (fileName.includes(input)) {
-          rows[i].style.display = "";
-        } else {
-          rows[i].style.display = "none";
-        }
-      }
-    }
-  </script>
-</head>
-  
-<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPx129RW9JlcOLxJXp-sdHzyP8TtSrS7M-9aDZ403X20Gc1gGmBK1ujrfRQJBt6Uan7TbzMRM-ZzMRUK-VjnbevhInUZ564HBS6ZO-fXSUYRsQ7t9956qmEjn05OU32FwEByqc3MEDtxZyoXf_WKMquKio4YVT5bXC3lO4yH02QURPo6dlSJ7jvXsBHpU/s1600/Picsart_23-08-05_15-37-35-197.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" data-original-height="3464" data-original-width="3464" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPx129RW9JlcOLxJXp-sdHzyP8TtSrS7M-9aDZ403X20Gc1gGmBK1ujrfRQJBt6Uan7TbzMRM-ZzMRUK-VjnbevhInUZ564HBS6ZO-fXSUYRsQ7t9956qmEjn05OU32FwEByqc3MEDtxZyoXf_WKMquKio4YVT5bXC3lO4yH02QURPo6dlSJ7jvXsBHpU/s1600/Picsart_23-08-05_15-37-35-197.png"/></a></div>
-  
-<body>
-  <h1>Pilih Product</h1>
-  <div class="search-container">
-    <input id="search-input" onkeyup="searchFiles()" placeholder="Mau Cari apa? ..." type="text" />
+---
+layout: default
+---
+<div class="boxbg-header">
+  <div class="boxicon-header">
+    <i class="fab fa-adobe"></i>
+    <i class="fa-brands fa-microsoft fa-5x windows-icon"></i>
+    <i class="fa-brands fa-apple fa-5x apple-icon"></i>
   </div>
-  
+  <p class="title-header">Adobe</p>
+</div>
+<!--<div class="boxbg-divider-top"></div>-->
+
+<div class="boxbg">
+  <button type="button" class="collapsible">Tampilkan Menu</button>
+  <div class="content">
+    <p>
+      <a href="{{ '/pages/adobe.html#windows' | relative_url }}">Windows</a> • 
+      <a href="{{ '#' | relative_url }}">Mac OS</a> • 
+      <a href="{{ '#' | relative_url }}">Linux</a><br>
+    </p>
+  </div>
+  <div class="divider"></div>
+
+
   <table>
     <thead>
       <tr>
@@ -80,13 +34,9 @@
       </tr>
     </thead>
     <tbody>
-            <tr>
-        <td>Alternatif</td>
-        <td><a href="https://sites.google.com/view/x1bypasstols/windows-download?authuser=0">Link1</a> </td>
-      </tr>
       <tr>
         <td>Windows 11 / 10 / 8.1</td>
-        <td><a href="https://www.microsoft.com/software-download">Link1</a> - <a href="https://unknown240.github.io/msdl">Link2</a> </td>
+        <td><a href="https://www.microsoft.com/software-download">Link1</a> - <a href="https://massgrave.dev/msdl/">Link2</a> </td>
       </tr>
       <tr>
         <td>Windows 7</td>
@@ -102,7 +52,7 @@
       </tr>
       <tr>
         <td>Office C2R Installers (Retail)</td>
-        <td><a href="https://x1bypass-blog.blogspot.com/2023/08/office-c2r-installer-link.html">Link</a></td>
+        <td><a href="https://www.x1bypass.my.id/p/office-c2r-installer-links.html">Link</a> (Easy to install)</td>
       </tr>
       <tr>
         <td>Office C2R Custom Install (Retail / VL)</td>
@@ -122,71 +72,32 @@
       </tr>
        		<tr>
         <td>Windows 11 Pro 22H2 Build 22621.1702 (No TPM Required) With Office 2021 Pro Plus </td>
-        <td><a href="magnet:?xt=urn:btih:326B7E500233AB48624AFA9617C809FBBDA33747&amp;dn=Windows%2011%20Pro%2022H2%2022621.1702%20%28No%20TPM%29%20With%20Office%202021%20Preactivated%20%5bFileCR%5d.iso&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&amp;tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
+        <td><a href="magnet:?xt=urn:btih:326B7E500233AB48624AFA9617C809FBBDA33747&dn=Windows%2011%20Pro%2022H2%2022621.1702%20%28No%20TPM%29%20With%20Office%202021%20Preactivated%20%5bFileCR%5d.iso&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
       </tr>
        		<tr>
         <td>Windows 10 Pro 22H2 19045.2965 Preactivated</td>
-        <td><a href="magnet:?xt=urn:btih:16E980F67FFC0CA5BD7FF56A02B80CC2BADF7977&amp;dn=Windows%2010%20Pro%2022H2%2019045.2965%20Preactivated%20Multilingual%20May%202023%20%5bFileCR%5d.iso&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&amp;tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
+        <td><a href="magnet:?xt=urn:btih:16E980F67FFC0CA5BD7FF56A02B80CC2BADF7977&dn=Windows%2010%20Pro%2022H2%2019045.2965%20Preactivated%20Multilingual%20May%202023%20%5bFileCR%5d.iso&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
       </tr>
        		<tr>
         <td>Windows 11 Pro 22H2 22621.1702 (No TPM) Preactivated</td>
-        <td><a href="magnet:?xt=urn:btih:922446CF92FB8BAD26BA0EB0ABB06577833B9152&amp;dn=Windows%2011%20Pro%2022H2%2022621.1702%20%28No%20TPM%29%20Preactivated%20May%202023%20%5bFileCR%5d.iso&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&amp;tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
+        <td><a href="magnet:?xt=urn:btih:922446CF92FB8BAD26BA0EB0ABB06577833B9152&dn=Windows%2011%20Pro%2022H2%2022621.1702%20%28No%20TPM%29%20Preactivated%20May%202023%20%5bFileCR%5d.iso&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
       </tr>
        		<tr>
         <td>Windows 7 SP1 Professional Multilingual Preactivated</td>
-        <td><a href="magnet:?xt=urn:btih:1546875F67EF6EC15ED0A59C7EE5A50595DFDB61&amp;dn=Windows%207%20SP1%20Multilingual%20Preactivated%20May%202023%20%5bFileCR%5d&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&amp;tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
+        <td><a href="magnet:?xt=urn:btih:1546875F67EF6EC15ED0A59C7EE5A50595DFDB61&dn=Windows%207%20SP1%20Multilingual%20Preactivated%20May%202023%20%5bFileCR%5d&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
       </tr>
              		<tr>
         <td>Windows 7 SP1 Ultimate Multilingual Preactivated</td>
-        <td><a href="magnet:?xt=urn:btih:1546875F67EF6EC15ED0A59C7EE5A50595DFDB61&amp;dn=Windows%207%20SP1%20Multilingual%20Preactivated%20May%202023%20%5bFileCR%5d&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&amp;tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
+        <td><a href="magnet:?xt=urn:btih:1546875F67EF6EC15ED0A59C7EE5A50595DFDB61&dn=Windows%207%20SP1%20Multilingual%20Preactivated%20May%202023%20%5bFileCR%5d&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&tr=wss%3a%2f%2ftracker.btorrent.xyz">Torrent</a></td>
       </tr>
              		<tr>
         <td>Windows 8.1 Pro Build 9600 Multilingual Preactivated</td>
-        <td><a href="magnet:?xt=urn:btih:2E16F984ADF5F424126E2CD353E1A65CEAFC2468&amp;dn=Windows%208.1%20Pro%20Vl%20Update%203%20May%202022%20Multilingual%20Preactivated%20%5bFileCR%5d.iso&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce">Torrent</a></td>
+        <td><a href="magnet:?xt=urn:btih:2E16F984ADF5F424126E2CD353E1A65CEAFC2468&dn=Windows%208.1%20Pro%20Vl%20Update%203%20May%202022%20Multilingual%20Preactivated%20%5bFileCR%5d.iso&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337%2fannounce&tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.open-internet.nl%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce">Torrent</a></td>
       </tr>
     </tbody>
   </table>
 </body>
 
-<style>.table-container {
-  overflow-x: auto;
-}
-
-.styled-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9em;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 20px;
-}
-
-.styled-table th,
-.styled-table td {
-  padding: 12px 15px;
-  text-align: center;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-}
-
-.styled-table thead th {
-  background-color: #3e4eff;
-  color: #ffffff;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type td {
-  border-bottom: none;
-}
-
-.center-header {
-  text-align: center;
-}
-
-</style>
 <br />
 
 
@@ -197,12 +108,6 @@
             <th>Version</th>
             <th>Author</th>
             <th>Download</th>
-        </tr>
-          <tr>
-            <td>NVCleanstall NVdia Downloader/Custom Driver</td>
-            <td>Last Update</td>
-            <td>Publisher : TechPowerUp</td>
-            <td><a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/">download</a></td>
         </tr>
         <tr>
             <td>Driver Pack Solution Plus</td>
@@ -272,25 +177,12 @@
         </tr>      
     </table>
 
-    <style>
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
+</div>
+  <div class="divider"></div>
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-          background-color: #ffffff;
-          color: #000000;
-        }
-
-        th {
-            background-color: #ffffff;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style></html>
+</div>
+</div>
+<div class="backtotop">
+    <a href="#top"><i class="fa-solid fa-circle-chevron-up"></i> Back to top</a>
+  </div>
+</div>
