@@ -78,28 +78,8 @@ layout: default
   }
 
 </style>
-  
-  <script>
-    function searchFiles() {
-      var input = document.getElementById("search-input").value.toLowerCase();
-      var rows = document.querySelectorAll("tbody tr");
-      
-      for (var i = 0; i < rows.length; i++) {
-        var fileName = rows[i].getElementsByTagName("td")[0].textContent.toLowerCase();
-        if (fileName.includes(input)) {
-          rows[i].style.display = "";
-        } else {
-          rows[i].style.display = "none";
-        }
-      }
-    }
-  </script>
 </head>
 <body>
-  <h1>Pilih Product</h1>
-  <div class="search-container">
-    <input id="search-input" onkeyup="searchFiles()" placeholder="Mau Cari apa? ..." type="text" />
-  </div>
 
   <iframe src="https://unlocknow.net/checker/carrier.html" width="100%" height="600"><br />
     Your browser does not support iframes.<br />
