@@ -22,49 +22,55 @@ layout: default
   </div>
   <div class="divider"></div>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    .table-container {
-      margin-bottom: 40px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: center;
-    }
-    th, td {
-      padding: 8px;
-      text-align: center;
-    }
-    th.center-header {
-      text-align: center;
-    }
-    th {
-      background-color: #f2f2f200;
-      border-bottom: 1px solid #ddd;
-      text-align: center;
-    }
-    td {
-      border-bottom: 1px solid #ddd;
-      text-align: center;
-    }
-    a {
-      text-decoration: none;
-    }
-    .search-container {
-      margin-bottom: 20px;
-    }
-    .search-container input[type=text] {
-      padding: 8px;
-      width: 200px;
-      border: 1px solid #ddd;
-    }
-  </style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .table-container {
+    margin-bottom: 40px;
+  }
+
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .search-container {
+    margin-bottom: 20px;
+  }
+
+  .search-container input[type=text] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>
+  
   <script>
     function searchFiles() {
       var input = document.getElementById("search-input").value.toLowerCase();
@@ -80,28 +86,6 @@ layout: default
       }
     }
   </script>
-
-<style>
-  table {
-      font-family: Arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-  }
-
-  th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-  }
-
-  th {
-      color: #000;
-      background-color: #f2f2f200;
-  }
-
-  tr:nth-child(even) {
-      background-color: #f9f9f9;
-  }
-</style>
 </head>
 <body>
   <h1>Pilih Product</h1>
